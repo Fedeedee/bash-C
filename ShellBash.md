@@ -41,3 +41,17 @@ Esempio: `{ ls || echo ciao; } && echo finito`
 - Duplicazione della scrittura: `echo ciao 1>&5` usa il file descriptor 5 al posto di STDOUT.
 - Chiusura di una redirezione: `exec 5>&-` chiude il file descriptor 5.
 
+
+## Lezione 4
+
+### Pipeling
+Il pipeling è un meccanismo che presenta due macro-sintassi e collega lo STDIN con lo STDOUT e volendo anche STDERR.
+
+### Prima Sintassi
+- 'ls | tr "aeiou" "12345" ' con questo comando verrà tradotto quello che ls fornisce come output.
+
+### Seconda Sintassi
+- 'lss |& tr "aeoui" "12345"' collego alla STDIN oltre che la STDOUT anche la STDERR, quindi in questo caso riporterà l'errore tradotto.
+
+
+Il pipeling esiste perchè le ridirezioni sarebbero più scomode per comandi come quelli riportati sopra, ma il concetto è uguale.
