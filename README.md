@@ -1,6 +1,9 @@
 # bash-C
 
-BASH
+## Bash
+
+- Shell bash
+- Scripting bash
 
 
 C
