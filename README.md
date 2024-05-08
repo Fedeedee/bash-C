@@ -1,4 +1,4 @@
-# bash-C
+# bash & C
 
 ## Bash
 
@@ -6,4 +6,4 @@
 - Scripting bash
 
 
-C
+## C
